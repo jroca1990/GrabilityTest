@@ -1,0 +1,844 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF1AAF3C1FCE9B74009C895F /* SearchMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1AAF3B1FCE9B74009C895F /* SearchMovieViewController.swift */; };
+		CF1AAF3E1FCE9E03009C895F /* MovieSearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1AAF3D1FCE9E03009C895F /* MovieSearchPresenter.swift */; };
+		CF7ECBF21FC330FB00804D11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7ECBF11FC330FB00804D11 /* AppDelegate.swift */; };
+		CF7ECBF41FC330FB00804D11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7ECBF31FC330FB00804D11 /* ViewController.swift */; };
+		CF7ECBF71FC330FB00804D11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF7ECBF51FC330FB00804D11 /* Main.storyboard */; };
+		CF7ECBFA1FC330FB00804D11 /* GrabilityTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF7ECBF81FC330FB00804D11 /* GrabilityTest.xcdatamodeld */; };
+		CF7ECBFC1FC330FB00804D11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF7ECBFB1FC330FB00804D11 /* Assets.xcassets */; };
+		CF7ECBFF1FC330FB00804D11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF7ECBFD1FC330FB00804D11 /* LaunchScreen.storyboard */; };
+		CF7ECC0A1FC330FB00804D11 /* GrabilityTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7ECC091FC330FB00804D11 /* GrabilityTestTests.swift */; };
+		CF7ECC151FC330FB00804D11 /* GrabilityTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7ECC141FC330FB00804D11 /* GrabilityTestUITests.swift */; };
+		CFCCF6E11FC5E3B0006B0B67 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CFCCF6E01FC5E3AF006B0B67 /* logo.png */; };
+		CFCCF6E71FC5F15F006B0B67 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCCF6E61FC5F15F006B0B67 /* Category.swift */; };
+		CFCCF6E91FC5F170006B0B67 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCCF6E81FC5F170006B0B67 /* Movie.swift */; };
+		CFCCF6EB1FC5F623006B0B67 /* CategoryDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCCF6EA1FC5F623006B0B67 /* CategoryDao.swift */; };
+		CFCCF6ED1FC5F632006B0B67 /* MovieDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCCF6EC1FC5F632006B0B67 /* MovieDao.swift */; };
+		CFCCF6F81FC602BA006B0B67 /* CategoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCCF6F71FC602BA006B0B67 /* CategoryPresenter.swift */; };
+		CFCCF6FB1FC60894006B0B67 /* CategoryDaoImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCCF6FA1FC60894006B0B67 /* CategoryDaoImp.swift */; };
+		CFCCF7011FC608BD006B0B67 /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCCF6FE1FC608BD006B0B67 /* ServiceFactory.swift */; };
+		CFCCF7021FC608BD006B0B67 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCCF6FF1FC608BD006B0B67 /* MovieService.swift */; };
+		CFCCF7031FC608BD006B0B67 /* TheMoviedbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCCF7001FC608BD006B0B67 /* TheMoviedbService.swift */; };
+		CFCCF7051FC6097A006B0B67 /* MovieDaoImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCCF7041FC6097A006B0B67 /* MovieDaoImp.swift */; };
+		CFCCF7071FC609CF006B0B67 /* CategoryDaoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCCF7061FC609CF006B0B67 /* CategoryDaoFactory.swift */; };
+		CFCCF7091FC609DB006B0B67 /* MovieDaoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCCF7081FC609DB006B0B67 /* MovieDaoFactory.swift */; };
+		CFCCF70D1FC618BC006B0B67 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCCF70C1FC618BC006B0B67 /* CategoryTableViewController.swift */; };
+		CFCCF7101FC72EDC006B0B67 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCCF70F1FC72EDC006B0B67 /* DataController.swift */; };
+		CFCCF7121FC73778006B0B67 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCCF7111FC73778006B0B67 /* Constants.swift */; };
+		CFCCF7141FC73975006B0B67 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCCF7131FC73975006B0B67 /* MoviesViewController.swift */; };
+		CFCCF7161FC73A3C006B0B67 /* MoviesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCCF7151FC73A3C006B0B67 /* MoviesPresenter.swift */; };
+		CFCCF7181FC768C6006B0B67 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCCF7171FC768C6006B0B67 /* MovieCollectionViewCell.swift */; };
+		CFCCF71A1FCE53A4006B0B67 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCCF7191FCE53A4006B0B67 /* MovieDetailViewController.swift */; };
+		CFCCF71C1FCE53F4006B0B67 /* MovieDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCCF71B1FCE53F4006B0B67 /* MovieDetailPresenter.swift */; };
+		DDB3F296F4060E3C4245FE9A /* Pods_GrabilityTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E1128A431A9081CE826BE /* Pods_GrabilityTest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF7ECC061FC330FB00804D11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF7ECBE61FC330FB00804D11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF7ECBED1FC330FB00804D11;
+			remoteInfo = GrabilityTest;
+		};
+		CF7ECC111FC330FB00804D11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF7ECBE61FC330FB00804D11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF7ECBED1FC330FB00804D11;
+			remoteInfo = GrabilityTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5FBD14E7696E5C75EC3AAD4F /* Pods-GrabilityTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrabilityTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GrabilityTest/Pods-GrabilityTest.debug.xcconfig"; sourceTree = "<group>"; };
+		BE61462ECBE2932EF6A45685 /* Pods-GrabilityTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrabilityTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-GrabilityTest/Pods-GrabilityTest.release.xcconfig"; sourceTree = "<group>"; };
+		CF1AAF3B1FCE9B74009C895F /* SearchMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovieViewController.swift; sourceTree = "<group>"; };
+		CF1AAF3D1FCE9E03009C895F /* MovieSearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchPresenter.swift; sourceTree = "<group>"; };
+		CF7ECBEE1FC330FB00804D11 /* GrabilityTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrabilityTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF7ECBF11FC330FB00804D11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF7ECBF31FC330FB00804D11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF7ECBF61FC330FB00804D11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF7ECBF91FC330FB00804D11 /* GrabilityTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GrabilityTest.xcdatamodel; sourceTree = "<group>"; };
+		CF7ECBFB1FC330FB00804D11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF7ECBFE1FC330FB00804D11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF7ECC001FC330FB00804D11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF7ECC051FC330FB00804D11 /* GrabilityTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrabilityTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF7ECC091FC330FB00804D11 /* GrabilityTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrabilityTestTests.swift; sourceTree = "<group>"; };
+		CF7ECC0B1FC330FB00804D11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF7ECC101FC330FB00804D11 /* GrabilityTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrabilityTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF7ECC141FC330FB00804D11 /* GrabilityTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrabilityTestUITests.swift; sourceTree = "<group>"; };
+		CF7ECC161FC330FB00804D11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFCCF6E01FC5E3AF006B0B67 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		CFCCF6E61FC5F15F006B0B67 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		CFCCF6E81FC5F170006B0B67 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		CFCCF6EA1FC5F623006B0B67 /* CategoryDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDao.swift; sourceTree = "<group>"; };
+		CFCCF6EC1FC5F632006B0B67 /* MovieDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDao.swift; sourceTree = "<group>"; };
+		CFCCF6F71FC602BA006B0B67 /* CategoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPresenter.swift; sourceTree = "<group>"; };
+		CFCCF6FA1FC60894006B0B67 /* CategoryDaoImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDaoImp.swift; sourceTree = "<group>"; };
+		CFCCF6FE1FC608BD006B0B67 /* ServiceFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
+		CFCCF6FF1FC608BD006B0B67 /* MovieService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		CFCCF7001FC608BD006B0B67 /* TheMoviedbService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheMoviedbService.swift; sourceTree = "<group>"; };
+		CFCCF7041FC6097A006B0B67 /* MovieDaoImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDaoImp.swift; sourceTree = "<group>"; };
+		CFCCF7061FC609CF006B0B67 /* CategoryDaoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDaoFactory.swift; sourceTree = "<group>"; };
+		CFCCF7081FC609DB006B0B67 /* MovieDaoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDaoFactory.swift; sourceTree = "<group>"; };
+		CFCCF70C1FC618BC006B0B67 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		CFCCF70F1FC72EDC006B0B67 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		CFCCF7111FC73778006B0B67 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CFCCF7131FC73975006B0B67 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		CFCCF7151FC73A3C006B0B67 /* MoviesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesPresenter.swift; sourceTree = "<group>"; };
+		CFCCF7171FC768C6006B0B67 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		CFCCF7191FCE53A4006B0B67 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		CFCCF71B1FCE53F4006B0B67 /* MovieDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailPresenter.swift; sourceTree = "<group>"; };
+		D00E1128A431A9081CE826BE /* Pods_GrabilityTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrabilityTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF7ECBEB1FC330FB00804D11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDB3F296F4060E3C4245FE9A /* Pods_GrabilityTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF7ECC021FC330FB00804D11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF7ECC0D1FC330FB00804D11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FCDF523A8D90E6508ABEA34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D00E1128A431A9081CE826BE /* Pods_GrabilityTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF5CA95EFC249A10089AE146 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5FBD14E7696E5C75EC3AAD4F /* Pods-GrabilityTest.debug.xcconfig */,
+				BE61462ECBE2932EF6A45685 /* Pods-GrabilityTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF7ECBE51FC330FB00804D11 = {
+			isa = PBXGroup;
+			children = (
+				CF7ECBF01FC330FB00804D11 /* GrabilityTest */,
+				CF7ECC081FC330FB00804D11 /* GrabilityTestTests */,
+				CF7ECC131FC330FB00804D11 /* GrabilityTestUITests */,
+				CF7ECBEF1FC330FB00804D11 /* Products */,
+				CF5CA95EFC249A10089AE146 /* Pods */,
+				1FCDF523A8D90E6508ABEA34 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CF7ECBEF1FC330FB00804D11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF7ECBEE1FC330FB00804D11 /* GrabilityTest.app */,
+				CF7ECC051FC330FB00804D11 /* GrabilityTestTests.xctest */,
+				CF7ECC101FC330FB00804D11 /* GrabilityTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF7ECBF01FC330FB00804D11 /* GrabilityTest */ = {
+			isa = PBXGroup;
+			children = (
+				CFCCF6DE1FC5E3AF006B0B67 /* Resources */,
+				CFCCF6E31FC5E3EC006B0B67 /* Model */,
+				CFCCF6DD1FC5E3AF006B0B67 /* Views */,
+				CFCCF6DC1FC5E3AF006B0B67 /* Presenters */,
+				CF7ECBF11FC330FB00804D11 /* AppDelegate.swift */,
+				CFCCF7111FC73778006B0B67 /* Constants.swift */,
+				CF7ECBFB1FC330FB00804D11 /* Assets.xcassets */,
+				CF7ECC001FC330FB00804D11 /* Info.plist */,
+				CF7ECBF81FC330FB00804D11 /* GrabilityTest.xcdatamodeld */,
+			);
+			path = GrabilityTest;
+			sourceTree = "<group>";
+		};
+		CF7ECC081FC330FB00804D11 /* GrabilityTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF7ECC091FC330FB00804D11 /* GrabilityTestTests.swift */,
+				CF7ECC0B1FC330FB00804D11 /* Info.plist */,
+			);
+			path = GrabilityTestTests;
+			sourceTree = "<group>";
+		};
+		CF7ECC131FC330FB00804D11 /* GrabilityTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF7ECC141FC330FB00804D11 /* GrabilityTestUITests.swift */,
+				CF7ECC161FC330FB00804D11 /* Info.plist */,
+			);
+			path = GrabilityTestUITests;
+			sourceTree = "<group>";
+		};
+		CFCCF6DC1FC5E3AF006B0B67 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				CFCCF6F71FC602BA006B0B67 /* CategoryPresenter.swift */,
+				CFCCF7151FC73A3C006B0B67 /* MoviesPresenter.swift */,
+				CFCCF71B1FCE53F4006B0B67 /* MovieDetailPresenter.swift */,
+				CF1AAF3D1FCE9E03009C895F /* MovieSearchPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		CFCCF6DD1FC5E3AF006B0B67 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CF7ECBF31FC330FB00804D11 /* ViewController.swift */,
+				CFCCF70C1FC618BC006B0B67 /* CategoryTableViewController.swift */,
+				CFCCF7131FC73975006B0B67 /* MoviesViewController.swift */,
+				CFCCF7171FC768C6006B0B67 /* MovieCollectionViewCell.swift */,
+				CFCCF7191FCE53A4006B0B67 /* MovieDetailViewController.swift */,
+				CF1AAF3B1FCE9B74009C895F /* SearchMovieViewController.swift */,
+				CF7ECBF51FC330FB00804D11 /* Main.storyboard */,
+				CF7ECBFD1FC330FB00804D11 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CFCCF6DE1FC5E3AF006B0B67 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CFCCF6DF1FC5E3AF006B0B67 /* images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CFCCF6DF1FC5E3AF006B0B67 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				CFCCF6E01FC5E3AF006B0B67 /* logo.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		CFCCF6E31FC5E3EC006B0B67 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CFCCF70E1FC72EC8006B0B67 /* Persistence */,
+				CFCCF6FC1FC608BD006B0B67 /* Service */,
+				CFCCF6E51FC5E51C006B0B67 /* dao */,
+				CFCCF6E41FC5E51C006B0B67 /* dto */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFCCF6E41FC5E51C006B0B67 /* dto */ = {
+			isa = PBXGroup;
+			children = (
+				CFCCF6E61FC5F15F006B0B67 /* Category.swift */,
+				CFCCF6E81FC5F170006B0B67 /* Movie.swift */,
+			);
+			path = dto;
+			sourceTree = "<group>";
+		};
+		CFCCF6E51FC5E51C006B0B67 /* dao */ = {
+			isa = PBXGroup;
+			children = (
+				CFCCF6F91FC6086F006B0B67 /* Factory */,
+				CFCCF6EA1FC5F623006B0B67 /* CategoryDao.swift */,
+				CFCCF6FA1FC60894006B0B67 /* CategoryDaoImp.swift */,
+				CFCCF6EC1FC5F632006B0B67 /* MovieDao.swift */,
+				CFCCF7041FC6097A006B0B67 /* MovieDaoImp.swift */,
+			);
+			path = dao;
+			sourceTree = "<group>";
+		};
+		CFCCF6F91FC6086F006B0B67 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				CFCCF7061FC609CF006B0B67 /* CategoryDaoFactory.swift */,
+				CFCCF7081FC609DB006B0B67 /* MovieDaoFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		CFCCF6FC1FC608BD006B0B67 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CFCCF6FD1FC608BD006B0B67 /* Factory */,
+				CFCCF6FF1FC608BD006B0B67 /* MovieService.swift */,
+				CFCCF7001FC608BD006B0B67 /* TheMoviedbService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CFCCF6FD1FC608BD006B0B67 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				CFCCF6FE1FC608BD006B0B67 /* ServiceFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		CFCCF70E1FC72EC8006B0B67 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				CFCCF70F1FC72EDC006B0B67 /* DataController.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF7ECBED1FC330FB00804D11 /* GrabilityTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF7ECC191FC330FB00804D11 /* Build configuration list for PBXNativeTarget "GrabilityTest" */;
+			buildPhases = (
+				2769EB428865AFAADB8FB35C /* [CP] Check Pods Manifest.lock */,
+				CF7ECBEA1FC330FB00804D11 /* Sources */,
+				CF7ECBEB1FC330FB00804D11 /* Frameworks */,
+				CF7ECBEC1FC330FB00804D11 /* Resources */,
+				BFAD895E13FB9A208D5DF3C5 /* [CP] Embed Pods Frameworks */,
+				57A1268C994E5C50B44247A2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrabilityTest;
+			productName = GrabilityTest;
+			productReference = CF7ECBEE1FC330FB00804D11 /* GrabilityTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF7ECC041FC330FB00804D11 /* GrabilityTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF7ECC1C1FC330FB00804D11 /* Build configuration list for PBXNativeTarget "GrabilityTestTests" */;
+			buildPhases = (
+				CF7ECC011FC330FB00804D11 /* Sources */,
+				CF7ECC021FC330FB00804D11 /* Frameworks */,
+				CF7ECC031FC330FB00804D11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF7ECC071FC330FB00804D11 /* PBXTargetDependency */,
+			);
+			name = GrabilityTestTests;
+			productName = GrabilityTestTests;
+			productReference = CF7ECC051FC330FB00804D11 /* GrabilityTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CF7ECC0F1FC330FB00804D11 /* GrabilityTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF7ECC1F1FC330FB00804D11 /* Build configuration list for PBXNativeTarget "GrabilityTestUITests" */;
+			buildPhases = (
+				CF7ECC0C1FC330FB00804D11 /* Sources */,
+				CF7ECC0D1FC330FB00804D11 /* Frameworks */,
+				CF7ECC0E1FC330FB00804D11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF7ECC121FC330FB00804D11 /* PBXTargetDependency */,
+			);
+			name = GrabilityTestUITests;
+			productName = GrabilityTestUITests;
+			productReference = CF7ECC101FC330FB00804D11 /* GrabilityTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF7ECBE61FC330FB00804D11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Jorge;
+				TargetAttributes = {
+					CF7ECBED1FC330FB00804D11 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					CF7ECC041FC330FB00804D11 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CF7ECBED1FC330FB00804D11;
+					};
+					CF7ECC0F1FC330FB00804D11 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CF7ECBED1FC330FB00804D11;
+					};
+				};
+			};
+			buildConfigurationList = CF7ECBE91FC330FB00804D11 /* Build configuration list for PBXProject "GrabilityTest" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF7ECBE51FC330FB00804D11;
+			productRefGroup = CF7ECBEF1FC330FB00804D11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF7ECBED1FC330FB00804D11 /* GrabilityTest */,
+				CF7ECC041FC330FB00804D11 /* GrabilityTestTests */,
+				CF7ECC0F1FC330FB00804D11 /* GrabilityTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF7ECBEC1FC330FB00804D11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFCCF6E11FC5E3B0006B0B67 /* logo.png in Resources */,
+				CF7ECBFF1FC330FB00804D11 /* LaunchScreen.storyboard in Resources */,
+				CF7ECBFC1FC330FB00804D11 /* Assets.xcassets in Resources */,
+				CF7ECBF71FC330FB00804D11 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF7ECC031FC330FB00804D11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF7ECC0E1FC330FB00804D11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2769EB428865AFAADB8FB35C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		57A1268C994E5C50B44247A2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GrabilityTest/Pods-GrabilityTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFAD895E13FB9A208D5DF3C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GrabilityTest/Pods-GrabilityTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF7ECBEA1FC330FB00804D11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFCCF7011FC608BD006B0B67 /* ServiceFactory.swift in Sources */,
+				CFCCF7051FC6097A006B0B67 /* MovieDaoImp.swift in Sources */,
+				CFCCF7121FC73778006B0B67 /* Constants.swift in Sources */,
+				CFCCF6EB1FC5F623006B0B67 /* CategoryDao.swift in Sources */,
+				CFCCF70D1FC618BC006B0B67 /* CategoryTableViewController.swift in Sources */,
+				CF1AAF3E1FCE9E03009C895F /* MovieSearchPresenter.swift in Sources */,
+				CFCCF6F81FC602BA006B0B67 /* CategoryPresenter.swift in Sources */,
+				CFCCF7181FC768C6006B0B67 /* MovieCollectionViewCell.swift in Sources */,
+				CFCCF7091FC609DB006B0B67 /* MovieDaoFactory.swift in Sources */,
+				CF7ECBF41FC330FB00804D11 /* ViewController.swift in Sources */,
+				CFCCF7101FC72EDC006B0B67 /* DataController.swift in Sources */,
+				CF7ECBFA1FC330FB00804D11 /* GrabilityTest.xcdatamodeld in Sources */,
+				CF7ECBF21FC330FB00804D11 /* AppDelegate.swift in Sources */,
+				CFCCF6FB1FC60894006B0B67 /* CategoryDaoImp.swift in Sources */,
+				CFCCF6ED1FC5F632006B0B67 /* MovieDao.swift in Sources */,
+				CFCCF7141FC73975006B0B67 /* MoviesViewController.swift in Sources */,
+				CFCCF6E71FC5F15F006B0B67 /* Category.swift in Sources */,
+				CFCCF6E91FC5F170006B0B67 /* Movie.swift in Sources */,
+				CFCCF7071FC609CF006B0B67 /* CategoryDaoFactory.swift in Sources */,
+				CFCCF7031FC608BD006B0B67 /* TheMoviedbService.swift in Sources */,
+				CFCCF7021FC608BD006B0B67 /* MovieService.swift in Sources */,
+				CFCCF71A1FCE53A4006B0B67 /* MovieDetailViewController.swift in Sources */,
+				CFCCF71C1FCE53F4006B0B67 /* MovieDetailPresenter.swift in Sources */,
+				CFCCF7161FC73A3C006B0B67 /* MoviesPresenter.swift in Sources */,
+				CF1AAF3C1FCE9B74009C895F /* SearchMovieViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF7ECC011FC330FB00804D11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF7ECC0A1FC330FB00804D11 /* GrabilityTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF7ECC0C1FC330FB00804D11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF7ECC151FC330FB00804D11 /* GrabilityTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF7ECC071FC330FB00804D11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF7ECBED1FC330FB00804D11 /* GrabilityTest */;
+			targetProxy = CF7ECC061FC330FB00804D11 /* PBXContainerItemProxy */;
+		};
+		CF7ECC121FC330FB00804D11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF7ECBED1FC330FB00804D11 /* GrabilityTest */;
+			targetProxy = CF7ECC111FC330FB00804D11 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF7ECBF51FC330FB00804D11 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF7ECBF61FC330FB00804D11 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF7ECBFD1FC330FB00804D11 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF7ECBFE1FC330FB00804D11 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF7ECC171FC330FB00804D11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF7ECC181FC330FB00804D11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF7ECC1A1FC330FB00804D11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FBD14E7696E5C75EC3AAD4F /* Pods-GrabilityTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XLF9EA6VXQ;
+				INFOPLIST_FILE = GrabilityTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.grabilitytest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CF7ECC1B1FC330FB00804D11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE61462ECBE2932EF6A45685 /* Pods-GrabilityTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XLF9EA6VXQ;
+				INFOPLIST_FILE = GrabilityTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.grabilitytest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CF7ECC1D1FC330FB00804D11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5K9V3Z52PJ;
+				INFOPLIST_FILE = GrabilityTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.antediem.sportsmanias.bbb.GrabilityTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrabilityTest.app/GrabilityTest";
+			};
+			name = Debug;
+		};
+		CF7ECC1E1FC330FB00804D11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5K9V3Z52PJ;
+				INFOPLIST_FILE = GrabilityTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.antediem.sportsmanias.bbb.GrabilityTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrabilityTest.app/GrabilityTest";
+			};
+			name = Release;
+		};
+		CF7ECC201FC330FB00804D11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5K9V3Z52PJ;
+				INFOPLIST_FILE = GrabilityTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.antediem.sportsmanias.bbb.GrabilityTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GrabilityTest;
+			};
+			name = Debug;
+		};
+		CF7ECC211FC330FB00804D11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5K9V3Z52PJ;
+				INFOPLIST_FILE = GrabilityTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.antediem.sportsmanias.bbb.GrabilityTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GrabilityTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF7ECBE91FC330FB00804D11 /* Build configuration list for PBXProject "GrabilityTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF7ECC171FC330FB00804D11 /* Debug */,
+				CF7ECC181FC330FB00804D11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF7ECC191FC330FB00804D11 /* Build configuration list for PBXNativeTarget "GrabilityTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF7ECC1A1FC330FB00804D11 /* Debug */,
+				CF7ECC1B1FC330FB00804D11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF7ECC1C1FC330FB00804D11 /* Build configuration list for PBXNativeTarget "GrabilityTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF7ECC1D1FC330FB00804D11 /* Debug */,
+				CF7ECC1E1FC330FB00804D11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF7ECC1F1FC330FB00804D11 /* Build configuration list for PBXNativeTarget "GrabilityTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF7ECC201FC330FB00804D11 /* Debug */,
+				CF7ECC211FC330FB00804D11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CF7ECBF81FC330FB00804D11 /* GrabilityTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CF7ECBF91FC330FB00804D11 /* GrabilityTest.xcdatamodel */,
+			);
+			currentVersion = CF7ECBF91FC330FB00804D11 /* GrabilityTest.xcdatamodel */;
+			path = GrabilityTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CF7ECBE61FC330FB00804D11 /* Project object */;
+}

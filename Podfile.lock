@@ -1,0 +1,31 @@
+PODS:
+  - Alamofire (4.5.1)
+  - AlamofireImage (3.3.0):
+    - Alamofire (~> 4.5)
+  - ImageSlideshow (1.4.1):
+    - ImageSlideshow/Core (= 1.4.1)
+  - ImageSlideshow/Alamofire (1.4.1):
+    - AlamofireImage (~> 3.0)
+    - ImageSlideshow/Core
+  - ImageSlideshow/Core (1.4.1)
+  - ReachabilitySwift (4.1.0)
+  - SwiftSpinner (1.5.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - AlamofireImage (~> 3.3)
+  - ImageSlideshow (~> 1.4)
+  - ImageSlideshow/Alamofire
+  - ReachabilitySwift
+  - SwiftSpinner
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
+  ImageSlideshow: 1bb0e610e28a71e8936d57265d882f61714a470b
+  ReachabilitySwift: 6849231cd4e06559f3b9ef4a97a0a0f96d41e09f
+  SwiftSpinner: 4c058c7a1d6b444dd2e1d70988ead40783097133
+
+PODFILE CHECKSUM: 79567689325b4c224514c6b6bd8dfcc4a6fe610e
+
+COCOAPODS: 1.1.1
